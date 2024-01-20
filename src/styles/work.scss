@@ -1,0 +1,72 @@
+#work {
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  width: 100%;
+  padding: 0 $p;
+  padding-top: 5rem;
+
+  > h2 {
+    font: 700 2.5rem $text2;
+    width: fit-content;
+    margin: 30px auto;
+    border-bottom: 1px solid $color6_1;
+  }
+  > section {
+    background-color: $color5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    > article {
+      width: 100%;
+
+      .workItem {
+        display: flex;
+        background-color: white;
+        width: 80%;
+        height: 30vmax;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-shadow: 5px 0px 10px 5px $color1;
+
+        > img {
+          height: 100%;
+          min-width: 40%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+        > aside {
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          > p {
+            letter-spacing: 2px;
+            line-height: 150%;
+            margin: 11px;
+          }
+
+          > a {
+            background-color: $color3;
+            padding: 0.7rem 1rem;
+            // margin: 2rem;
+            margin: 0px auto;
+            color: $color4;
+            transition: all 0.5s;
+            width: fit-content;
+            &:hover {
+              background-color: $color3_1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

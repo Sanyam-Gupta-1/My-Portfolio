@@ -1,0 +1,100 @@
+#home {
+  width: 100%;
+
+  display: flex;
+  position: relative;
+  > section {
+    width: 100%;
+
+    &:first-of-type {
+      padding-left: $p_md;
+      > div {
+        border-top: 1px solid $color6_2;
+        padding-top: 6rem;
+
+        > h1 {
+          font: 900 4rem $text1;
+        }
+
+        .Typewriter {
+          margin-top: 10px;
+        }
+
+        .typewriterpara {
+          height: 20px;
+        }
+        > div {
+          display: flex;
+          gap: 3rem;
+          margin: 2rem 0;
+
+          > a {
+            &:first-of-type {
+              background-color: $color3;
+              color: $color1;
+              padding: 0.5rem 1.5rem;
+              transition: all 0.3s;
+              &:hover {
+                background-color: $color3_1;
+              }
+            }
+
+            &:last-of-type {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              color: $color6;
+            }
+          }
+        }
+        #home-contact {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          gap: 0;
+          p {
+            font: 900 2rem $text2;
+          }
+          span {
+            font: 500 1rem $text2;
+          }
+          &::after {
+            content: "";
+            background-color: $color4;
+            height: 4rem;
+            width: 13rem;
+            border-radius: 50px;
+            position: absolute;
+            left: 5%;
+            top: 25%;
+            z-index: -1;
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      border-top: 1px solid $color6_2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 40vmax;
+        height: 40vmax;
+        object-fit: contain;
+        filter: drop-shadow(0 0 5px white);
+        display: inline-block;
+      }
+    }
+  }
+
+  > svg {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    animation: animateSvg 0.7s linear infinite alternate;
+  }
+}
